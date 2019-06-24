@@ -1,0 +1,27 @@
+body {
+  font-size: 62.5%;
+}
+.nav-container {
+  background: #212121;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-container h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.nav-container .nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 80%;
+  align-items: center;
+}
+.nav-container .nav a {
+  margin: 30px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
