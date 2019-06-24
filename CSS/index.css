@@ -6,17 +6,21 @@ body {
   height: 100px;
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+}
+.nav-container .logo {
+  height: 100px;
+  width: 120px;
 }
 .nav-container h1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  font-size: 1.6rem;
   color: white;
+  margin: auto 0;
 }
 .nav-container .nav {
   display: flex;
   justify-content: flex-end;
-  width: 80%;
+  width: 60%;
   align-items: center;
 }
 .nav-container .nav a {
@@ -24,4 +28,7 @@ body {
   color: white;
   text-decoration: none;
   font-size: 1.6rem;
+}
+.nav-container .nav .btn {
+  height: 50px;
 }
