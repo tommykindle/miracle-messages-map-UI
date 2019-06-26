@@ -2,18 +2,24 @@
     background: #212121;
     height: 100px;
     display: flex;
-    justify-content: space-between;
+   // margin: 0 auto;
+    justify-content: space-between;   
 
     .logo {
-        // width: 200px;
-        margin: auto 0;
+     width: 200px;
+     margin: auto 0;
     }
 
     .nav {
-        display: inline-flex;
-        width: 500px;
-        height: 100%;
-        float: right;
+        display: flex;
+        max-width: 500px;
+        margin: left auto; 
+        justify-content: space-between;
+        width: 100%; 
+        flex-wrap: wrap;  
+    }
+
+        
         
 
         a {
@@ -25,8 +31,12 @@
 
         .btn {
             height: 50px;
-            margin: auto;
+            margin: auto 0 auto 10px;
             float: right;
+            background-color: white; 
+            border-style: none; 
+            border-radius: 15px; 
+            padding: 0 30px; 
         }
-    }
+    
 }
