@@ -38,6 +38,12 @@
      justify-content: space-between; 
      flex-wrap: wrap; 
      align-items: center; 
+     @media @mobile{
+        flex-direction: column; 
+        align-items: center; 
+        flex-wrap: nowrap; 
+        width: 100%; 
+     }
       
 
 
@@ -55,6 +61,10 @@
         //margin-right: 10px;
         //margin-bottom: 10px; 
         height: 400px;   
+        @media @mobile{
+            width: 100%;
+            
+        }
         
     }
 
@@ -63,11 +73,18 @@
         color: #5e5e5e; 
         width: 48%; 
         line-height: 2.0; 
-         
+         @media @mobile {
+             width: 100%; 
+         }
     }
 }
 
 .objectives{
+    @media @mobile {
+        display: flex; 
+        flex-direction: column; 
+        flex-wrap: nowrap; 
+    }
     h3{
         font-size: 1.8rem; 
         text-align: center; 
@@ -94,8 +111,16 @@
 .core-objectives{
     display: flex; 
     justify-content: space-between;
+    @media @mobile {
+        flex-direction: column; 
+        align-items: center; 
+        flex-wrap: nowrap; 
+    }
     div{
         width: 30%; 
+        @media @mobile{
+            width: 100%; 
+        }
     } 
 
     h4{

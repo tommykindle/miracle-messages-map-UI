@@ -146,7 +146,7 @@ body {
 }
 .nav-container .nav {
   display: flex;
-  max-width: 500px;
+  max-width: 550px;
   margin: left auto;
   justify-content: space-between;
   width: 100%;
@@ -201,6 +201,13 @@ header .cta-btn {
   align-items: center;
   flex-wrap: wrap;
 }
+@media (max-width: 640px) {
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
 .stats-container div {
   margin: 15px;
 }
@@ -220,6 +227,14 @@ header .cta-btn {
   flex-wrap: wrap;
   align-items: center;
 }
+@media (max-width: 640px) {
+  .mission {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+}
 .mission h2 {
   font-size: 2rem;
   width: 100%;
@@ -232,11 +247,28 @@ header .cta-btn {
   object-fit: scale-down;
   height: 400px;
 }
+@media (max-width: 640px) {
+  .mission img {
+    width: 100%;
+  }
+}
 .mission p {
   font-size: 1.2rem;
   color: #5e5e5e;
   width: 48%;
   line-height: 2;
+}
+@media (max-width: 640px) {
+  .mission p {
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .objectives {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 .objectives h3 {
   font-size: 1.8rem;
@@ -262,8 +294,20 @@ header .cta-btn {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 640px) {
+  .objectives .core-objectives {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
 .objectives .core-objectives div {
   width: 30%;
+}
+@media (max-width: 640px) {
+  .objectives .core-objectives div {
+    width: 100%;
+  }
 }
 .objectives .core-objectives h4 {
   font-size: 1.8rem;
@@ -305,6 +349,14 @@ footer {
   height: 380px;
   width: 100%;
 }
+@media (max-width: 640px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+  }
+}
 footer h5 {
   font-size: 1.2rem;
   color: #d2d2d2;
@@ -319,6 +371,11 @@ footer p {
   justify-content: space-between;
   margin: 0 auto;
   flex-direction: column;
+}
+@media (max-width: 640px) {
+  .carousel {
+    display: none;
+  }
 }
 .carousel h2 {
   margin-top: 40px;

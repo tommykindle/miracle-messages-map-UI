@@ -4,7 +4,10 @@
     justify-content:space-between; 
     //flex-wrap: wrap; 
     margin: 0 auto; 
-    flex-direction: column;  
+    flex-direction: column; 
+    @media @mobile{
+        display: none; 
+    } 
      
    h2{
        margin-top: 40px; 
@@ -25,6 +28,7 @@
        width: 50%; 
        height: 400px; 
        margin: 0 auto; 
+        
    }
    .carousel-img{
        display: none; 
