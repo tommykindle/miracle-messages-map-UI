@@ -138,10 +138,10 @@ body {
   background: #212121;
   height: 100px;
   display: flex;
+  margin: 0 auto;
   justify-content: space-between;
 }
 .nav-container .logo {
-  width: 200px;
   margin: auto 0;
 }
 .nav-container .nav {
@@ -233,16 +233,6 @@ header .cta-btn {
   width: 48%;
   line-height: 2;
 }
-.carousel {
-  display: none;
-}
-.carousel h2 {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  text-align: center;
-  font-size: 2rem;
-  width: 100%;
-}
 .objectives h3 {
   font-size: 1.8rem;
   text-align: center;
@@ -317,4 +307,21 @@ footer h5 {
 footer p {
   font-size: 1rem;
   color: #797979;
+}
+.carousel {
+  max-width: 1690px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto 0;
+}
+.carousel h2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 2rem;
+  width: 100%;
+}
+.carousel img {
+  width: 50%;
 }
