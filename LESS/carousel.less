@@ -1,9 +1,10 @@
 .carousel{
     max-width: 1690px;
     display:flex; 
-    justify-content:center; 
-    flex-wrap: wrap; 
-    margin: auto 0; 
+    justify-content:space-between; 
+    //flex-wrap: wrap; 
+    margin: 0 auto; 
+    flex-direction: column;  
      
    h2{
        margin-top: 40px; 
@@ -13,7 +14,27 @@
        width: 100%; 
         
    }
+   div{
+       display: flex; 
+       justify-content: center; 
+       flex-direction: column; 
+       align-items: center; 
+   }
+   
    img{
        width: 50%; 
+       height: 400px; 
+       margin: 0 auto; 
    }
+   .carousel-img{
+       display: none; 
+   }
+  
+   .carousel-content{
+       display: none; 
+   }
+   .active{
+    display: flex; 
+}
+   
 }
