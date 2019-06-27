@@ -6,7 +6,7 @@
     margin: 0 auto; 
     flex-direction: column; 
     @media @mobile{
-        display: none; 
+        //display: none; 
     } 
      
    h2{
@@ -28,6 +28,11 @@
        width: 50%; 
        height: 400px; 
        margin: 0 auto; 
+       object-fit: cover; 
+       padding-bottom: 15px; 
+       @media @mobile {
+           width: 100%; 
+       }
         
    }
    .carousel-img{
@@ -39,6 +44,9 @@
    }
    .active{
     display: flex; 
+}
+p{
+    font-size: 1.2rem; 
 }
    
 }

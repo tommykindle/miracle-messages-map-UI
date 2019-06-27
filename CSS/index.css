@@ -136,10 +136,16 @@ body {
 }
 .nav-container {
   background: #212121;
-  height: 100px;
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
+  padding: 15px 0;
+}
+@media (max-width: 640px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .nav-container .logo {
   margin: auto 0;
@@ -152,11 +158,22 @@ body {
   width: 100%;
   flex-wrap: wrap;
 }
+@media (max-width: 400px) {
+  .nav-container .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .nav-container a {
   color: white;
   text-decoration: none;
   font-size: 1rem;
   margin: auto 20px;
+}
+@media (max-width: 400px) {
+  .nav-container a {
+    padding: 15px 0;
+  }
 }
 .nav-container .btn {
   height: 50px;
@@ -166,6 +183,11 @@ body {
   border-style: none;
   border-radius: 15px;
   padding: 0 30px;
+}
+@media (max-width: 640px) {
+  .nav-container .btn {
+    height: 30px;
+  }
 }
 header .header-background {
   background-image: url(/images/headerimage.jpg);
@@ -177,6 +199,7 @@ header .header-background {
   justify-content: flex-end;
   align-items: center;
   width: 100%;
+  background-position: center;
 }
 header p {
   font-size: 2rem;
@@ -373,9 +396,6 @@ footer p {
   flex-direction: column;
 }
 @media (max-width: 640px) {
-  .carousel {
-    display: none;
-  }
 }
 .carousel h2 {
   margin-top: 40px;
@@ -394,6 +414,13 @@ footer p {
   width: 50%;
   height: 400px;
   margin: 0 auto;
+  object-fit: cover;
+  padding-bottom: 15px;
+}
+@media (max-width: 640px) {
+  .carousel img {
+    width: 100%;
+  }
 }
 .carousel .carousel-img {
   display: none;
@@ -403,4 +430,7 @@ footer p {
 }
 .carousel .active {
   display: flex;
+}
+.carousel p {
+  font-size: 1.2rem;
 }
